@@ -19,4 +19,4 @@ jobs:
       - name: deploy
         run: echo 'deploying...'
       - name: context info
-        run: echo "${{ github.workflow }}"
+        run: echo "${{ toJson(github.workflow) }}"
